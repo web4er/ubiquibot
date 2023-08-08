@@ -173,6 +173,8 @@ Bounty bot is built using the [probot](https://probot.github.io/) framework so i
 ├── <a href="https://github.com/ubiquity/ubiquibot/tree/development/src/configs">configs</a>: Constants and default config values used to create a bot configuration<br> in case we're missing any needed configuration parameters from both .env and config file.
 |
 ├── <a href="https://github.com/ubiquity/ubiquibot/tree/development/src/handlers">handlers</a>: A set of event-based processors.<br> Each handler processes a specific request and it may consist of pre, action and post handlers.<br> A pre handler would be running in prior to the main action which needs to be shorter not to affect the main handler's process.<br> A post handler would be running as soon as the main handler gets completed. <br>It has no limitation on its completion time.<br> For example, it could be an example of pre-handler to create missing price labels <br> because if we don't have necessary labels created already on the repo, labeling non-exists labels would definitely throw.
+
+Appending an extra line
 |
 ├── <a href="https://github.com/ubiquity/ubiquibot/tree/development/src/types">types</a> A set of schema and type definitions.<br> Why do we need schema? because we want to validate the unknown input and throw the error before the main execution.
 |
